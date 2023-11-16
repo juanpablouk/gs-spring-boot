@@ -11,13 +11,15 @@ import java.util.Locale;
 public class UserDetails implements Serializable {
     protected String firstName;
     protected String lastName;
+    protected String email;
     protected String ssn;
     protected String phoneNumber;
 
-    public UserDetails(String firstName, String lastName, String ssn, String phoneNumber) {
+    public UserDetails(String firstName, String lastName, String email, String ssn, String phoneNumber) {
 
         this.firstName=firstName;
         this.lastName=lastName;
+        this.email=email;
         this.ssn=ssn;
         this.phoneNumber=phoneNumber;
     }
